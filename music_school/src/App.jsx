@@ -1,16 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Sidebar from './Components/Sidebar'
+import MainRoutes from './Routes/mainRoutes'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className='w-full h-screen text-4xl text-blue-600'>
-      
-  hello world tailwind css
+    <>   
+    <div className='flex'>
+      <Sidebar/>
+      <main className='w-full border-l-[2px]'><MainRoutes/></main>
     </div>
+    </>
+ 
   )
 }
 
