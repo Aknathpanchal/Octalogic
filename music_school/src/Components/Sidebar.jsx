@@ -9,7 +9,7 @@ const Sidebar = () => {
   return (
   
 <>
-<div className='w-20 h-screen p-4 bg-white flex flex-col justify-between'>
+<div className='min-h-screen w-28 p-4 bg-white flex flex-col justify-between border-r-4 border-gray-500'>
         <div className='flex flex-col items-center'>
             <div> <Link to='/'>
             <div>
@@ -20,14 +20,21 @@ const Sidebar = () => {
           </div>
          <div> 
             <Link to='/'>
-            <div className='bg-gray-100 selection:bg-red-500 active:bg-red-300 w-11/12 hover:bg-red-200 cursor-pointer my-4 p-3 rounded-lg inline-block'>
-              <MdOutlineDashboard size={30} className='m-auto'/>
+            {/* <div className='bg-gray-100 selection:bg-red-500 active:bg-red-300 w-11/12 hover:bg-red-200 cursor-pointer my-4 p-2 rounded-lg inline-block'>
+              <MdOutlineDashboard size={20} className='m-auto'/>
               <p>Home</p>
-            </div>
+            </div> */}
+
+
+<div className='bg-gray-100 w-11/12 hover:bg-red-200 cursor-pointer my-4 p-2 rounded-lg inline-block' style={{borderRadius:"10px"}}>
+  <MdOutlineDashboard size={20} className='m-auto' />
+  <p>Home</p>
+</div>
+
           </Link>
           <Link to='/courses'>
-            <div className='bg-gray-100 hover:bg-red-300  active:bg-red-300 w-11/12 hover.bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block'>
-              <MdOutlineQueueMusic size={30} className='m-auto'/>
+            <div className='bg-gray-100 hover:bg-red-300  active:bg-red-300 w-11/12 hover.bg-gray-200 cursor-pointer my-4 p-2 rounded-lg inline-block' style={{borderRadius:"10px"}}>
+              <MdOutlineQueueMusic size={20} className='m-auto'/>
               <p>Courses</p>
             </div>
           </Link>
@@ -35,10 +42,10 @@ const Sidebar = () => {
         
         </div>
 
-        <div className='flex flex-col items-center'>  
+        <div className=''>  
             <Link to='/#'>
-            <div className='bg-gray-100 active:bg-red-300 w-11/12 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block align-bottom justify-center'>
-              <MdLogout size={30} className='m-auto'/>
+            <div className='bg-gray-100 selection:bg-red-500 active:bg-red-300 w-11/12 hover:bg-red-200 cursor-pointer my-4 p-2 rounded-lg inline-block' style={{borderRadius:"10px"}}>
+              <MdLogout size={20} className='m-auto'/>
               <p>Logout</p>
             </div>
           </Link>
