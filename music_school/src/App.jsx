@@ -1,5 +1,5 @@
 import './App.css'
-import Sidebar from './Components/Sidebar'
+import Sidebar from '@/components/Sidebar'
 import MainRoutes from './Routes/mainRoutes'
 
 function App() {
@@ -7,8 +7,8 @@ function App() {
   return (
     <>   
     <div className='flex'>
-      <Sidebar/>
-      <main className='w-full border-l-[2px]'><MainRoutes/></main>
+<Sidebar/>
+<MainRoutes/>
     </div>
     </>
  
